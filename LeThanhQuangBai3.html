@@ -1,0 +1,32 @@
+<form action="action_page.php">
+  <div class="imgcontainer">
+    <img src="C:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Blue hills.jpg" width="200" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container" id="myForm">
+	<div>
+		<label id="fname"><b>Username</b></label>
+		<input type="text" placeholder="Enter Username" name="uname" required>
+	</div>
+	<div>
+		<label><b>Password</b></label>
+		<input id="pass" type="password" placeholder="Enter Password" name="psw" required>
+	</div>
+	<div>
+		<label><b>Email</b></label>
+		<input type="email" placeholder="Enter Email" name="email" required>
+	</div>
+	<div>
+		<button type="submit" onclick="myFunction()">Login</button>
+	</div>
+  </div>
+</form>
+<script>
+	function myFunction() {
+		var x;
+		x = document.getElementByName("pass");
+		if (x.value < 4) {
+			text = "Passwords required more than 4 character";
+		}
+	}
+</script>
